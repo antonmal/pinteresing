@@ -1,0 +1,24 @@
+$navbar-height: 100px;
+$navbar-default-bg: #2980b9;
+$navbar-default-color: white;
+$navbar-default-link-color: white;
+$navbar-default-brand-color: #ffd41f;
+$btn-primary-bg: #27ae60;
+
+@import 'bootstrap';
+
+.navbar-brand {
+  font-size: 2.5em;
+  font-weight: bold;
+  padding-left: 50px;
+}
+
+/*.navbar-default .navbar-brand {
+  color: #3366FF;
+}
+*/
+/*.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #5e5e5e;
+  background-color: transparent;
+}*/
