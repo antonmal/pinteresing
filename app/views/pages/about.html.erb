@@ -1,7 +1,13 @@
 <div class="jumbotron center">
-     <h1>Welcome to my app!</h1>
-     <p>
-       <%= link_to "Log in", "#", class: "btn btn-default btn-lg" %>
-       <%= link_to "Sign up", "#", class: "btn btn-primary btn-lg" %>
-  </p>    
+	<h1>Welcome to my app!</h1>
+
+	<div style="text-align: left">I am Anton Malkov. A serial entrepreneur, passionate traveller, avid yachtsman and currently re-learning software developer. I am taking a few courses on software development and test different things on this website.</div>
+
+	<% if !user_signed_in? %>
+		<p>Sign up to try this Pinterest-style app.</p>
+		<p>
+		<%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-lg" %>
+		</p>  
+	<% end %>
+
 </div>
