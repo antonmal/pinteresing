@@ -27,6 +27,8 @@ gem 'devise', '~> 3.5.1'
 
 gem 'paperclip', '~> 4.3.0'
 
+gem 'aws-sdk', '~> 2.1.7'
+
 group :production do
 	gem 'pg'
 	gem 'rails_12factor'
