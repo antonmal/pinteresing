@@ -32,7 +32,6 @@ class PinsController < ApplicationController
       redirect_to @pin, notice: 'Pin was successfully updated.'
     else
       render :edit
-      end
     end
   end
 
