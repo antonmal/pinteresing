@@ -22,6 +22,8 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'bootstrap-sass'
+# Devise = powerful authorization / user management solution
+gem 'devise', '~> 3.5.1'
 
 group :production do
 	gem 'pg'
