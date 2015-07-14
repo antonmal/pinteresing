@@ -18,12 +18,10 @@ class PinsController < ApplicationController
   def create
     @pin = Pin.new(pin_params)
 
-    respond_to do |format|
-      if @pin.save
-        redirect_to @pin, notice: 'Pin was successfully created.'
-      else
-        render :new
-      end
+    if @pin.save
+      redirect_to @pin, notice: 'Pin was successfully created.'
+    else
+      render :new
     end
   end
 
