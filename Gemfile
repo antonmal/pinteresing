@@ -25,6 +25,8 @@ gem 'bootstrap-sass'
 # Devise = powerful authorization / user management solution
 gem 'devise', '~> 3.5.1'
 
+gem 'paperclip', '~> 4.3.0'
+
 group :production do
 	gem 'pg'
 	gem 'rails_12factor'

@@ -5,6 +5,10 @@
   <%= @pin.description %>
 </p>
 
+<p>
+ <%= image_tag @pin.image.url :large %>
+</p>
+
 <% if @pin.user == current_user && user_signed_in? %>
 	<%= link_to 'Edit', edit_pin_path(@pin) %> | 
 <% end %>
