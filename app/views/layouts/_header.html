@@ -17,6 +17,14 @@
 
       <ul class="nav navbar-nav navbar-right">
 
+          <% if user_signed_in? %>
+            <li>
+              <%= link_to new_pin_path do %>
+                <span class="glyphicon glyphicon-plus"></span> New Pin
+              <% end %>
+            </li>
+          <% end %>
+
         <li><%= link_to "Contacts", contacts_path %></li>
         <li><%= link_to "About", about_path %></li>
 
@@ -29,13 +37,13 @@
 
       </ul>
 
-      <% if user_signed_in? %>
+  <!--     <% if user_signed_in? %>
             <div class="nav navbar-nav navbar-right">
             <%= link_to new_pin_path, class: "btn btn-default navbar-btn" do %>
               <span class="glyphicon glyphicon-plus"></span> New Pin
             <% end %>
             </div>
-      <% end %>
+      <% end %> -->
 
     </div><!-- /.navbar-collapse -->
 
