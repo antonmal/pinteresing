@@ -14,15 +14,8 @@
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse">
-      <ul class="nav navbar-nav navbar-right">
 
-      <% if user_signed_in? %>
-          <li>
-            <%= button_tag new_pin_path, class: "btn btn-default navbar-btn" do %>
-              <span class="glyphicon glyphicon-plus"></span> New Pin
-            <% end %>
-          </li>
-      <% end %>
+      <ul class="nav navbar-nav navbar-right">
 
         <li><%= link_to "Contacts", contacts_path %></li>
         <li><%= link_to "About", about_path %></li>
@@ -35,6 +28,14 @@
       <% end %>
 
       </ul>
+
+      <% if user_signed_in? %>
+            <div class="nav navbar-nav navbar-right">
+            <%= link_to new_pin_path, class: "btn btn-default navbar-btn" do %>
+              <span class="glyphicon glyphicon-plus"></span> New Pin
+            <% end %>
+            </div>
+      <% end %>
 
     </div><!-- /.navbar-collapse -->
 
